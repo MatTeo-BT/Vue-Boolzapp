@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolzapp</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./style.css">
+        <!-- FONTAWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+    <main>
+        <section class="container d-flex">
+            <div class="sidebar">
+                <div class="user d-flex">
+                   <p class="name"> <img src="./img/avatar_8.jpg" alt="user-img"> Matteo </p>
+                   <p class="options">
+                    <i class="fa-solid fa-circle-notch"></i>
+                    <i class="fa-solid fa-message"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                   </p>
+                </div>
+                <div class="alerts">
+
+                </div>
+                <article>
+                    <input type="text" class="searchbar" placeholder= "Cerca e inizia una nuova chat">
+                </article>
+                <article class="contact-list">
+                    <ul>
+                        <li v-for="contact in contacts">
+                            {{contact.name}}
+                        </li>
+                    </ul>
+                </article>
+                
+            </div>
+            <div class="message-container">
+                <div class="receiver">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

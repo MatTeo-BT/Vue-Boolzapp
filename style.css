@@ -1,0 +1,50 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+border: 1px solid black;
+}
+.d-flex{
+    display: flex;
+}
+.container{
+    width: 90%;
+    height: 1000px;
+    
+    margin: 0 auto;
+}
+.sidebar{
+    width: 35%;
+    height: 100%;
+}
+.message-container{
+    width: 65%;
+    height: 100%;
+}
+
+img{
+    width: 20%;
+}
+.name{
+    width: 50%;
+}
+.options{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.options i {
+    padding: .4rem;
+}
+.alerts{
+    height: 7%;
+    background-color: #8EDAFC;
+
+}
+.searchbar{
+    padding: 6px;
+    border: .5px solid grey;
+    margin-top: 10px;
+}
