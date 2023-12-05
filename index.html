@@ -11,15 +11,16 @@
 </head>
 <body>
     <script src="https://unpkg.com/vue@3"></script>
+    <div id="app"> 
     <main>
         <section class="container d-flex">
             <div class="sidebar">
-                <div class="user d-flex">
+                <div class="user d-flex bg-beige">
                    <p class="name"> <img src="./img/avatar_8.jpg" alt="user-img"> Matteo </p>
                    <p class="options">
-                    <i class="fa-solid fa-circle-notch"></i>
-                    <i class="fa-solid fa-message"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="color-grey fa-solid fa-circle-notch"></i>
+                    <i class="color-grey fa-solid fa-message"></i>
+                    <i class="color-grey fa-solid fa-ellipsis-vertical"></i>
                    </p>
                 </div>
                 <div class="alerts">
@@ -31,19 +32,27 @@
                 <article class="contact-list">
                     <ul>
                         <li v-for="contact in contacts">
-                            {{contact.name}}
+                            <span> {{contact.name}} </span>
+                            <img :src=" contact.avatar" alt="">
                         </li>
                     </ul>
                 </article>
                 
             </div>
             <div class="message-container">
-                <div class="receiver">
-
+                <div class="receiver d-flex bg-beige">
+                    <p class="name"> <img src="./img/avatar_io.jpg" alt="user-img"> Sofia </p>
+                    <p class="options">
+                        <i class="color-grey fa-solid fa-magnifying-glass"></i>
+                        <i class="color-grey fa-solid fa-paperclip"></i>
+                        <i class="color-grey fa-solid fa-ellipsis-vertical"></i>
+                    </p>
                 </div>
+                <span class="background"></span>
             </div>
         </section>
     </main>
+</div>
     <script src="./script.js"></script>
 </body>
 </html>
