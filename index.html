@@ -52,10 +52,9 @@
                         <i class="color-grey fa-solid fa-ellipsis-vertical"></i>
                     </p>
                 </div>
-                <div class="messages clearfix" v-for="contacts[activeIndex].messages.message">
+                <div class="messages clearfix" v-for="(text)in contacts[activeIndex].messages">
                     <article class="message received" >
-                        {{contacts[activeIndex].messages.message}}
-                        
+                        {{text.message}}
                     </article>
                     <article class="message sent">
                         B
