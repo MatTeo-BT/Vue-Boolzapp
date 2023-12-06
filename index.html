@@ -32,8 +32,9 @@
                 <article class="contact-list">
                     <ul>
                         <li v-for="contact in contacts">
-                            <span> {{contact.name}} </span>
                             <img :src=" contact.avatar" alt="">
+                            <span> {{contact.name}} </span>
+                            
                         </li>
                     </ul>
                 </article>
@@ -48,7 +49,25 @@
                         <i class="color-grey fa-solid fa-ellipsis-vertical"></i>
                     </p>
                 </div>
-                <span class="background"></span>
+                <div class="messages clearfix">
+                    <article class="message received">
+                        A
+                    </article>
+                    <article class="message sent">
+                        B
+                    </article>
+                    <article class="message received">
+                        B
+                    </article>
+                    <article class="message sent">
+                        A
+                    </article>
+                </div>
+                <div class="message-input d-flex">
+                    <i class="fa-regular color-grey fa-face-smile"></i>
+                    <input type="text" class="type-text"  name="message-input" placeholder="Scrivi un messaggio">
+                    <i class="fa-solid color-grey fa-microphone"></i>
+                </div>
             </div>
         </section>
     </main>
