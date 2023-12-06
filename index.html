@@ -49,9 +49,10 @@
                         <i class="color-grey fa-solid fa-ellipsis-vertical"></i>
                     </p>
                 </div>
-                <div class="messages clearfix">
-                    <article class="message received">
-                        A
+                <div class="messages clearfix" v-for="text in messages.message">
+                    <article class="message received" >
+                        {{text messages.message}}
+                        
                     </article>
                     <article class="message sent">
                         B

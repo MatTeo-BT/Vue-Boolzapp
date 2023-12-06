@@ -103,6 +103,7 @@ div.messages > article.message.sent{
     background-color: #f3eeea;
     display: flex;
     align-items: center;
+
     
 }
 .clearflix::after{
@@ -112,6 +113,7 @@ div.messages > article.message.sent{
 }
 .type-text{
     padding: 1rem 600px 1rem 1rem;
+    border: none;
     
 }
 .message-input i{
