@@ -23,8 +23,10 @@
                     <i class="color-grey fa-solid fa-ellipsis-vertical"></i>
                    </p>
                 </div>
-                <div class="alerts">
-
+                <div class="alerts d-flex">
+                <i class="fa-solid fa-bell-slash"></i>
+                  <p> Ricevi notifiche di nuovi messaggi</p> 
+                  <p>Attiva notifiche desktop</p>
                 </div>
                 <article>
                     <input type="text" class="searchbar" placeholder= "Cerca e inizia una nuova chat">
@@ -41,17 +43,18 @@
                 
             </div>
             <div class="message-container">
-                <div class="receiver d-flex bg-beige">
-                    <p class="name"> <img src="./img/avatar_io.jpg" alt="user-img"> Sofia </p>
+                <div class="receiver bg-beige d-flex">
+                    <p class="name"> <img src="./img/avatar_io.jpg" alt="user-img"> Sofia <br> Ultimo accesso oggi alle 12:00 </p>
+                    
                     <p class="options">
                         <i class="color-grey fa-solid fa-magnifying-glass"></i>
                         <i class="color-grey fa-solid fa-paperclip"></i>
                         <i class="color-grey fa-solid fa-ellipsis-vertical"></i>
                     </p>
                 </div>
-                <div class="messages clearfix" v-for="text in messages.message">
+                <div class="messages clearfix" v-for="contacts[activeIndex].messages.message">
                     <article class="message received" >
-                        {{text messages.message}}
+                        {{contacts[activeIndex].messages.message}}
                         
                     </article>
                     <article class="message sent">

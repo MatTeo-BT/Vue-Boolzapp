@@ -29,7 +29,7 @@ main{
 }
 .sidebar{
     width: 35%;
-    height: 100%;
+    background-color: #ffffff
 }
 .message-container{
     width: 65%;
@@ -44,6 +44,7 @@ img{
 .color-grey{
     color: #67717F;
 }
+
 .name{
     width: 50%;
 }
@@ -59,12 +60,21 @@ img{
 .alerts{
     height: 7%;
     background-color: #8EDAFC;
-
+}
+.alerts i{
+    font-size: 24px;
+    color: #8EDAFC;
+    background-color: #ffffff;
+    border-radius: 3rem;
+    padding: .6rem;
 }
 .searchbar{
     padding: 6px;
     border: .5px solid grey;
     margin-top: 10px;
+}
+.user{
+    padding: .7rem;
 }
 .receiver p img{
     width: 11%;
@@ -103,8 +113,6 @@ div.messages > article.message.sent{
     background-color: #f3eeea;
     display: flex;
     align-items: center;
-
-    
 }
 .clearflix::after{
     display: block;
