@@ -35,6 +35,7 @@ main{
 .message-container{
     width: 65%;
     overflow-y: scroll;
+    
 }
 
 
@@ -79,6 +80,7 @@ img{
 .user{
     padding: .7rem;
 }
+
 .receiver p img{
     width: 11%;
 }
@@ -91,6 +93,7 @@ li{
 li p{
     padding: .7rem 0 0 1.3rem
 }
+
 
 div.messages{
     height: calc(100% - 145px);

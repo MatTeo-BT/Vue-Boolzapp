@@ -2,6 +2,7 @@ const {createApp} = Vue;
 createApp({
     data(){
         return{ 
+    newMsg:"",
     activeIndex:[0],
     contacts: [
         {
@@ -171,6 +172,10 @@ createApp({
  }, methods:{
     changeContact(index){
         this.activeIndex=index;
-    }
+    },
+      getNewMessage(newMessage){
+            this.contacts[this.activeIndex].messages.push(
+                {message:newMessage, status:'sent'})
  }
+}
 }).mount('#app'); 

@@ -61,7 +61,7 @@
                 </div>
                 <div class="message-input d-flex">
                     <i class="fa-regular color-grey fa-face-smile"></i>
-                    <input type="text" class="type-text"  name="message-input" placeholder="Scrivi un messaggio">
+                    <input type="text" class="type-text"  name="message-input" placeholder="Scrivi un messaggio" v-model="newMsg" @keyup.enter="getNewMessage(newMsg)">
                     <i class="fa-solid color-grey fa-microphone"></i>
                 </div>
             </div>
