@@ -52,9 +52,10 @@
                         <i class="color-grey fa-solid fa-ellipsis-vertical"></i>
                     </p>
                 </div>
-                <div class="messages clearfix" v-for="text in contacts[activeIndex].messages" >
-                    <article class="message received" >
+                <div class="messages clearfix" >
+                    <article  v-for="text in contacts[activeIndex].messages" class="message received" :class="text.status == 'received' ? 'received' : 'sent'">
                         {{text.message}}
+                        <!-- <p> {{text.date}}</p> -->
                     </article>
                     
                 </div>
