@@ -29,11 +29,14 @@ main{
 }
 .sidebar{
     width: 35%;
-    background-color: #ffffff
+    background-color: #ffffff;
+    overflow-y: scroll;
 }
 .message-container{
     width: 65%;
+    overflow-y: scroll;
 }
+
 
 img{
     width: 20%;
@@ -82,6 +85,12 @@ img{
 ul{
     list-style-type: none;
 }
+li{
+    padding: 1rem;
+}
+li p{
+    padding: .7rem 0 0 1.3rem
+}
 
 div.messages{
     height: calc(100% - 145px);
@@ -114,13 +123,13 @@ div.messages > article.message.sent{
     display: flex;
     align-items: center;
 }
-.clearflix::after{
+.clearflix:after{
     display: block;
     clear: both;
     content:'';
 }
 .type-text{
-    padding: 1rem 600px 1rem 1rem;
+    padding: 1rem 380px 1rem 1rem;
     border: none;
     
 }

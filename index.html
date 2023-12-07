@@ -33,9 +33,9 @@
                 </article>
                 <article class="contact-list">
                     <ul>
-                        <li v-for="contact in contacts">
+                        <li v-for="(contact, activeIndex) in contacts" @click="changeContact(activeIndex)" class="d-flex" > 
                             <img :src=" contact.avatar" alt="">
-                            <span> {{contact.name}} </span>
+                            <p>  {{contact.name}} </p> 
                             
                         </li>
                     </ul>
@@ -52,19 +52,11 @@
                         <i class="color-grey fa-solid fa-ellipsis-vertical"></i>
                     </p>
                 </div>
-                <div class="messages clearfix" v-for="(text)in contacts[activeIndex].messages">
+                <div class="messages clearfix" v-for="text in contacts[activeIndex].messages" >
                     <article class="message received" >
                         {{text.message}}
                     </article>
-                    <article class="message sent">
-                        B
-                    </article>
-                    <article class="message received">
-                        B
-                    </article>
-                    <article class="message sent">
-                        A
-                    </article>
+                    
                 </div>
                 <div class="message-input d-flex">
                     <i class="fa-regular color-grey fa-face-smile"></i>
